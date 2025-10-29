@@ -70,6 +70,78 @@ body {
 }
 
 .item4 li {
+  paddi<!-- Leseverstehen  code source from www.w3schools.com --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+
+}
+
+.item1 {
+  grid-area: header;
+  background-color: purple;
+  text-align: center;
+  color: #ffffff;
+}
+
+.item1 > h1 {
+  font-size: 40px;
+}
+
+  
+.item3 {
+  grid-area: main;
+}
+
+.item3 > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3 > p {
+  margin-bottom: 7px;
+}
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4 > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
   padding: 5px;
   margin-bottom: 5px;
 }
@@ -111,13 +183,13 @@ body {
       <li>Crete is a Greek island in the Mediterranean Sea</li>
     </ul>
   </div>
-
+<div>
 <form action="first.html>
 <input type="submit" value="submit">
 <!-- code source from w3schools.com -->
 </form>
 
-  <div class="item5"><p>Resize the browser window to see how the content respond to the resizing.</p></div>
+ </div>  <div class="item5"><p>Resize the browser window to see how the content respond to the resizing.</p></div>
 
 <!-- Inhalt ändern. Schluss.-->
 
@@ -128,5 +200,6 @@ body {
 
 </body>
 </html>
+
 
 
