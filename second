@@ -1,0 +1,44 @@
+<!-- Label Option Radio code source from www.w3schools.com -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<!-- Inhalt ändern -->
+<h1>Auswahlsaufgabe</h1>
+
+<form action="third.html">
+<p>Welche Aktivität ist das?(Question1)</p>
+  <input type="radio" id="skaten" name="a1" value="30">
+<label for="a1">Skaten Option1</label>
+  <br>
+  <input type="radio" id="sken" name="a1" value="30">
+ <label for="a1">Fußball spielen Option2</label><br>
+  <input type="radio" id="spri" name="a1" value="100">
+ <label for="age3">einen Film sehen Option3<label><br>
+<input type="radio" id="spr" name="a1" value="60">
+ <label for="a1">rennen Option 4</label>
+
+
+
+
+<br>
+<br>
+<p>Welche Aktivität ist das?(Question1)</p>
+  <input type="radio" id="skaten" name="a1" value="30">
+<label for="a1">Skaten Option1</label>
+  <br>
+  <input type="radio" id="sken" name="a1" value="30">
+ <label for="a1">Fußball spielen Option2</label><br>
+  <input type="radio" id="spri" name="a1" value="100">
+ <label for="age3">einen Film sehen Option3<label><br>
+<input type="radio" id="spr" name="a1" value="60">
+  <label for="a1">rennen Option 4</label><br>
+<!-- Inhalt ändern. Schluss -->
+<input type="submit" id="s1" name="s1"0>
+</form>
+
+</body>
+</html>
