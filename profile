@@ -19,7 +19,7 @@ body {font-family: "Lato", sans-serif;}
   background-color: #f1f1f1;
   width: 20%;
   height: 700px;
-}
+} 
 
 /* Style the buttons inside the tab */
 .tab button {
