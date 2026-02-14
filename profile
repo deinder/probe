@@ -1,0 +1,145 @@
+<!-- Vertical Tabs for Quiz how to  source from www.w3schools.com 
+
+https://www.w3schools.com/howto/howto_js_vertical_tabs.asp
+--> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  height: 700px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 80%;
+  border-left: none;
+  height: 700px;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+<!--  Inhalt ändern-->
+
+
+
+<h2>Auswahlsaufgabe</h2>
+
+
+
+
+
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'uebermich')" id="defaultOpen">übermich</button>
+  <button class="tablinks" onclick="openCity(event, 'about me')">about me</button>
+  <button class="tablinks" onclick="openCity(event, 'paricay')">mera parichay</button>
+</div>
+
+<div id="uebermichin" class="tabcontent">
+  <h3>Über mich</h3><p>Mein Name ist Narendranath Tiwari. Ich komme aus Hyderabad.  1984-88 besuchte ich Schule in Vijayawada. Mein Bachelorstudium schloss ich im Jahr 1995 im Bereich Wissenschaft (B.Sc., Mathematics, Physics and Chemistry)  an der Nagarjuna Universität ab. 
+1995-98 studierte ich „Master of Computer Applications” an der Osmania Universität. Nach meinem Studium ging ich nach Deutschland. Deutsche Sprache lernte ich in Volkshochschulen. In Deutschland erwarb ich die deutsche Sprache auf der fortgeschrittenen Niveaustufe B2. 
+
+Nachdem ich im Jahr 2019 Master Abschluss in Germanistik an der MSU Baroda erworben hatte, war ich als Lehrkraft tätig. Ich unterrichtete  an der Jawahar Navodaya Schule, Khedgaon. Ich brachte den Studenten, die furs Studium nach Deutschland umziehen wollten, auf dem Sprachniveau (DaF) A1 bei. </p>
+</div>
+
+<div id="aboutmein" class="tabcontent">
+  <h3>About me</h3>
+  <p>My Name is Narendranath Tiwari. I am from Andhra Pradesh state.  I did my schooling in Vijayawada. ﻿I completed my Bachelors degree in Science (B.Sc.) in the year 1995 with Mathematics, Physics and Chemistry as subjects.
+I graduated with a Masters degree in Computer Applications in the year1998. 
+
+<br><br>After my masters, I went to Germany and worked as web programmer. I learnt German at Adult education schools (Volkshochschulen). In Germany, I attained advanced level of German (DaF) level B2 . 
+<br><br>
+I did Masters in German Language from MSU, Baroda and completed it in the year 2019.  After graduating, I worked as teacher  at  Jawahar Navodaya Vidyalaya school. During my masters and thereafter I taught German language level A1 to the students aspiring for studies in Germany.
+</p> 
+</div>
+
+<div id="Frage3" class="tabcontent">
+  <h3>Frage3</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<!--  Inhalt ändern.  Schluss-->
+
+<form action="schluss.html">
+  <br><br><br><br><br><br><br><br><br><br>
+<input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html> 
