@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+table, td, th {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.td1{
+  width: 30px;
+}
+.td2{
+  padding: 12px;
+  width: 70px;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 25%;
+  height: 550px;
+} 
+.headimage {
+  
+  width: 25%;
+  height: 90px;
+} 
+img{
+  width: 75px;
+  height: 75px;
+border-radius: 50%;
+}
+.headcontent {
+float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  width: 75%;
+  height:90px;
+}
+
+.prompt {
+  float: left;
+  padding: 0px 12px;
+text-align: center;
+font-weight: bold;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-left: none;
+  height: 20px;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 5px 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 75%;
+  border-left: none;
+  height: 550px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!--  Inhalt ändern-->
+
+<div class="prompt">
+Mein Profil</div>
+
+<table>
+  <tr>
+    <td class="td1"> <img  src="photo.jpg">
+</td>
+    <td class="td2">
+Name: Narendranath Tiwari<br>EMail:deinder.tiwari@gmail.com<br>Handynummer Nr.+91 81411 42700
+    </td>
+  </tr>
+</table>
+</div>
+<div id="qualification" class="tabcontent">
+  <h3>Qualification</h3>
+  <table>
+<tr><center>Ausbildung</center></tr>
+    <tr>
+        <td>Abscluss</td>
+        <td>Schule/Institut</td>
+        <td>Schule/<br>Universität</td>
+        <td>Jahr</td>
+        <td>%</td>
+
+    </tr>
+
+ <tr>
+        
+        <td>Diploma in Teaching German as Foreign Language</td>
+        
+        <td>Deptartment Of German, Faculty of Arts, Mumbai</td>
+        <td>University of Mumbai</td>
+        <td>27/11/2025</td>
+        <td>53.5</td>
+        
+    </tr>
+
+    <tr>
+        <td>Master of Arts in German Language</td>
+        
+        <td>German Dept., Faculty of Arts, Vadodara</td>
+        <td>Maharaja Sayajirao University</td>
+        <td>01/04/2019</td>
+        <td>54</td>
+    </tr>
+    <tr>
+        <td>Advanced Diploma in German</td>
+        
+        <td>Arts College, Hyderabad</td>
+        <td>Osmania University</td>
+        <td>01/04/2013</td>
+        <td>74</td>
+        
+    </tr>
+    <tr>
+        <td>Master of Computer Appln's</td>
+        
+        <td>Navabharati College of P.G.Studies, Secbad</td>
+        <td>Osmania University</td>
+        <td>01/09/1998</td>
+        <td>70</td>
+        
+    </tr>
+    <tr>
+        <td>Bachelor of Science</td>
+        
+        <td>S.R.R. and C.V.R. Govt. College, Bza.</td>
+        <td>Nagarjuna University</td>
+        <td>01/04/95</td>
+        <td>54</td>
+        
+    </tr>
+    <tr>
+        <td>XII-Inter. </td>
+        
+        <td>P.B.Siddhartha College of Arts &amp; Science BZA</td>
+        <td>Board of Inter. Education, A.P.</td>
+        <td>01/04/1990</td>
+        <td>66</td>
+        
+    </tr>
+    <tr>
+        <td>Secondary School Certificate</td>
+        <td>L.P.C.T. Gujarati High School BZA</td>
+        <td>Board of Secondary Education, A.P.</td>
+        <td>01/04/1988</td>
+        <td>77</td>
+    </tr>
+</table>
+
+</div>
+<div>
+<form action="profil.html">
+  <br><br><br><br><br><br><br><br><br><br>
+<input type="submit" value="back">
+</form></div>
+
+<!--  Inhalt ändern.  Schluss-->
+
+  
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html> 
